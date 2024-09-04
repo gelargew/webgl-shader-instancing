@@ -171,7 +171,7 @@ class InstancedMouseEffect {
       dummy.updateMatrix()
       mesh.setMatrixAt(i, dummy.matrix)
 
-      let center = 1.- dummy.position.length() * 0.12 * opts.colorDegrade
+      let center = 1.- dummy.position.length() * 0.12 * 0.1
       color.set( center * weights.x + (1.-weights.x) , center * weights.y + (1.-weights.y) , center * weights.z + (1.-weights.z))
       mesh.setColorAt(i,color)
 
